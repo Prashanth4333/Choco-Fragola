@@ -1,0 +1,879 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:font-wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:wght@300;400;500;600;700;800;900&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    /* background:  rgb(158, 230, 25); */
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.nav-link:hover {
+    color: rgb(231, 45, 45);
+}
+
+.nav-link::after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: rgb(255, 0, 0);
+    position: relative;
+    display: block;
+    opacity: 0;
+    transition: all 0.3s;
+    pointer-events: none;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}
+
+.title-p {
+    transform: rotate(270deg);
+    width: 30%;
+    height: 1%;
+    position: relative;
+    left: 5%;
+    margin-top: -13%;
+    margin-bottom: -11.5%;
+    /* background-color: green; */
+}
+
+/*==========================================  HOME  =============================================*/
+
+
+.home-bg {
+    background-image: url(https://res.cloudinary.com/drxkyjtlb/image/upload/v1717848895/home.jpg_pld2np.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.home-text {
+    /* background-color: green; */
+    width: 40%;
+    height: 30%;
+    margin-right: 6%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    float: right;
+    bottom: -35%;
+}
+
+.home-text h1 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+    font-family: ;
+    color: whitesmoke;
+    line-height: 2;
+}
+
+.home-text p {
+    text-align: center;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(207, 200, 200);
+}
+
+.custom-button {
+    color: white;
+    background-image: linear-gradient(#ff0000, #ca1b1b);
+    width: 100px;
+    height: 45px;
+    position: relative;
+    bottom: -30%;
+    left: 30%;
+    border-width: 0;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    /* box-shadow: rgb(27, 27, 27) 2px 2px 2px 2px; */
+}
+
+.custom-outline-button {
+    color: #ffffff;
+    background-color: transparent;
+    width: 100px;
+    height: 45px;
+    position: relative;
+    bottom: -30%;
+    left: 35%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ff0000;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+}
+
+/*==========================================  ABOUT  =============================================*/
+
+
+.About .row {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.row .col-1 {
+    width: 450px;
+    height: 450px;
+    margin: 10%;
+    margin-bottom: 5%;
+    background-color: #d0f5f3;
+    border-radius: 15%;
+    border-color: #d0f5f3;
+}
+
+.col-2 {
+    width: 450px;
+    height: 350px;
+    margin-bottom: 5%;
+    position: relative;
+    bottom: -30%;
+    text-align: center;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    /*  font-family: "Cookie", cursive;
+        font-weight: 400;
+        font-style: normal; */
+}
+
+.quote {
+    position: relative;
+    left: 30%;
+}
+
+.quote-col {
+    color: #ff0000;
+    font-weight: 500;
+}
+
+.col-1 .pic-1 img {
+    position: relative;
+    left: 25%;
+    width: 205px;
+    height: 205px;
+    transform: rotate(-60deg);
+    /*  background-color: #ff0000; */
+    /* background-image: url(https://res.cloudinary.com/drxkyjtlb/image/upload/v1717856864/strawberry-chocolate-free-vector-removebg-preview_e9476a.png); */
+}
+
+.col-1 .pic-2 img {
+    position: relative;
+    float: right;
+    width: 205px;
+    height: 205px;
+    top: 20%;
+    transform: rotate(20deg);
+    /*  background-color: green; */
+    /* background-image: url(https://res.cloudinary.com/drxkyjtlb/image/upload/v1717856861/french-fries-icon-of-cartoon-style-for-your-design-free-vector-removebg-preview_btfrpd.png); */
+}
+
+.col-1 .pic-3 img {
+    position: relative;
+    top: -40%;
+    width: 205px;
+    height: 205px;
+    /* background-color: yellow; */
+    /* background-image: url(https://res.cloudinary.com/drxkyjtlb/image/upload/v1717856833/pngtree-delicious-momos-with-chutney-free-psd-png-image_6720150_at9xja.png); */
+}
+
+.col-1 {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .15)
+}
+
+
+/*==========================================  MENU  =============================================*/
+
+
+.Menu .row-1 {
+    width: 100%;
+    background-color: #f5f2f2;
+    padding-bottom: 2%;
+}
+
+.Menu .row {
+    margin: 8%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row h1 {
+    text-align: center;
+    color: #e70b0b;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 60px;
+    font-style: normal;
+}
+
+.card {
+    border-radius: 15px;
+    margin: 5%;
+    border-color: #ffffff;
+}
+
+.card img {
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+}
+
+.card-body h5 {
+    position: relative;
+    text-align: left;
+    font-weight: 400;
+    /* background-color: green; */
+}
+
+.card-body .custom-button {
+    position: relative;
+    justify-content: center;
+    color: white;
+    background-image: linear-gradient(#ff0000, #ca1b1b);
+    width: 70px;
+    height: 30px;
+    position: relative;
+    bottom: -35%;
+    left: 45%;
+    border-width: 0;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+
+}
+
+.shadow {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .15) !important;
+}
+
+.fas .fa-star .rating {
+    color: #ca1b1b;
+}
+
+/*==========================================  delivery  =============================================*/
+
+
+.Delivery .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.Delivery .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, .15)
+}
+
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.text {
+    width: 300px;
+    text-align: center;
+}
+
+.text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.button {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #d32f2f;
+}
+
+/*==========================================  contact  =============================================*/
+
+.Contact {
+    margin: 10%;
+    margin-bottom: 5%;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side {
+    width: 30%;
+    padding: 20px;
+    background-color: #e6dfdf;
+}
+
+.right-side {
+    width: 50%;
+    padding: 20px;
+}
+
+.right-side h1 {
+    position: relative;
+    text-align: center;
+    top: -10%;
+    text-align: center;
+    color: #e70b0b;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 60px;
+    font-style: normal;
+}
+
+.map {
+    width: 100%;
+    height: 80%;
+    /* adjust the height as needed */
+    margin-top: -5%;
+    padding-right: -60%;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social li {
+    margin: 0 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.social a {
+    color: #e91b1b;
+    font-size: 24px;
+}
+
+/*==========================================  footer  =============================================*/
+
+.Footer {
+    background-color: rgb(222, 231, 231);
+}
+
+.Footer .foot {
+    transform: rotate(270deg);
+    width: 100px;
+    left: -1%;
+    margin-top: -13%;
+    margin-bottom: -11.5%;
+    /* background-color: green; */
+}
+
+.footer-section-mail-id {
+    position: relative;
+    padding: 1%;
+    bottom: -10%;
+    /* background-color: #ca1b1b; */
+}
+
+
+
+/*==========================       Responsive        ===============================*/
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .home-bg {
+        background-image: url(https://res.cloudinary.com/drxkyjtlb/image/upload/v1717848895/home.jpg_pld2np.jpg);
+        width: 100%;
+        height: 70vh;
+        background-size: cover;
+    }
+    
+    .home-text {
+        /* background-color: green; */
+        width: 40%;
+        height: 30%;
+        margin-right: 6%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: relative;
+        float: right;
+        bottom: -35%;
+    }
+    
+    .home-text h1 {
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 60px;
+        text-align: center;
+        font-family: ;
+        color: whitesmoke;
+        line-height: 2;
+    }
+    
+    .home-text p {
+        text-align: center;
+        font-family: "Jost", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        color: rgb(207, 200, 200);
+    }
+
+    /*---------------*/
+    .About .row{
+       /* background-color: green; */
+        padding-top: -80px;
+        margin-bottom: -190px;
+
+        
+    }
+    .col-2 {
+        width: 450px;
+        height: 350px;
+        
+        position: relative;
+        top: 20%;
+        text-align: center;
+        font-family: "Satisfy", cursive;
+        font-weight: 400;
+        font-style: normal;
+        /*  font-family: "Cookie", cursive;
+            font-weight: 400;
+            font-style: normal; */
+    }
+    
+    .quote {
+        position: relative;
+        left: 30%;
+    }
+    
+    .quote-col {
+        color: #ff0000;
+        font-weight: 500;
+    }
+
+    /*-----------*/
+    .Delivery .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, .15);
+        margin-top: -400px;
+        margin-bottom: -200px;
+    }
+    
+    .Contact .container{
+        margin-top: -300px;
+    }
+    
+ 
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Add your styles here */
+
+    .home-bg {
+        background-image: url(https://res.cloudinary.com/drxkyjtlb/image/upload/v1717848895/home.jpg_pld2np.jpg);
+        width: 100%;
+        height: 55vh;
+        background-size: cover;
+        
+    }
+    
+    .home-text {
+       /* background-color: green; */
+        width: 70%;
+        position: relative;
+        left: -8%;
+    }
+    
+    .home-text h1 {
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+        font-size: 60px;
+        text-align: center;
+        font-family: ;
+        color: whitesmoke;
+        line-height: 2;
+    }
+    
+    .home-text p {
+        text-align: center;
+        font-family: "Jost", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        color: rgb(207, 200, 200);
+    }
+    
+    .About .row {
+        width: 100%;
+        height: 70vh;
+        background-color: rgb(255, 255, 255);
+        margin-bottom: -40%;
+    }
+    
+    .row .col-1 {
+        width: 350px;
+        height: 350px;
+        background-color: #d0f5f3;
+        border-radius: 15%;
+        border-color: hsl(177, 65%, 89%);
+        margin-inline: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .col-2 {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        text-align: center;
+        top: 12%;
+        font-family: "Satisfy", cursive;
+        font-weight: 400;
+        font-style: normal;
+       /* background-color: green; */
+    }
+
+    .col-2 p{
+        font-size: 13px;
+    }
+    
+    .quote {
+        position: relative;
+        top: -10%;
+        left: 30%;
+    }
+    
+    .quote-col {
+        color: #ff0000;
+        font-weight: 500;
+    }
+    
+    .col-1 .pic-1 img {
+        position: relative;
+        left: 25%;
+        width: 160px;
+        height: 160px;
+        transform: rotate(-60deg);
+        /*  background-color: #ff0000; */
+        /* background-image: url(https://res.cloudinary.com/drxkyjtlb/image/upload/v1717856864/strawberry-chocolate-free-vector-removebg-preview_e9476a.png); */
+    }
+    
+    .col-1 .pic-2 img {
+        position: relative;
+        float: right;
+        width: 160px;
+        height: 160px;
+        top: 20%;
+        transform: rotate(20deg);
+        /*  background-color: green; */
+        /* background-image: url(https://res.cloudinary.com/drxkyjtlb/image/upload/v1717856861/french-fries-icon-of-cartoon-style-for-your-design-free-vector-removebg-preview_btfrpd.png); */
+    }
+    
+    .col-1 .pic-3 img {
+        position: relative;
+        top: -40%;
+        width: 160px;
+        height: 160px;
+        /* background-color: yellow; */
+        /* background-image: url(https://res.cloudinary.com/drxkyjtlb/image/upload/v1717856833/pngtree-delicious-momos-with-chutney-free-psd-png-image_6720150_at9xja.png); */
+    }
+    
+    .col-1 {
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, .15)
+    }
+
+    .Menu .row-1 {
+        width: 100%;
+        background-color: #f5f2f2;
+        padding-bottom: 2%;
+    }
+    
+    .Menu .row {
+        
+        margin-left: 12%;
+        margin-right: 10%;
+        margin-top: -20%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .row h1 {
+        text-align: center;
+        color: #e70b0b;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-size: 60px;
+        font-style: normal;
+    }
+    
+    .card {
+        border-radius: 15px;
+        margin-left: 3%;
+        margin-right: 3%;
+        border-color: #ffffff;
+    }
+    
+    .card img {
+        padding-top: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 250px;
+        height: 250px;
+        border-radius: 30px;
+    }
+    
+    .card-body h5 {
+        position: relative;
+        text-align: left;
+        font-weight: 400;
+        /* background-color: green; */
+    }
+
+    .Delivery .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    
+    .Delivery .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, .15);
+        margin-top: -110%;
+    }
+    
+    .image-container {
+        position: relative;
+        width: 250px;
+        height: 250px;
+    }
+    
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    
+    
+    .text {
+        width: 300px;
+        text-align: center;
+    }
+    
+    .text h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .text p {
+        font-size: 13px;
+        color: #555;
+        line-height: 1.5;
+    }
+    
+    .button {
+        background-color: #f44336;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 15px;
+    }
+    
+    .Contact {
+        margin: 10%;
+        margin-bottom: 5%;
+    }
+
+    .Contact .container{
+        margin-top: -120%;
+    }
+    
+    .info {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .info .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .left-side {
+        width: 40%;
+        padding: 20px;
+        background-color: #e6dfdf;
+    }
+    
+    .right-side {
+        width: 50%;
+        padding: 20px;
+    }
+    
+    .right-side h1 {
+        position: relative;
+        text-align: center;
+        top: -10%;
+        text-align: center;
+        color: #e70b0b;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        font-family: "Dancing Script", cursive;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-size: 40px;
+        font-style: normal;
+    }
+    
+    .map {
+        width: 100%;
+        height: 60%;
+        /* adjust the height as needed */
+        margin-top: -5%;
+        padding-right: -60%;
+        overflow: hidden;
+        position: relative;
+    
+    }
+    
+    .map img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .social ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .social li {
+        margin: 0 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .social a {
+        color: #e91b1b;
+        font-size: 24px;
+    }
+    
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Add your styles here */
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* Add your styles here */
+}
