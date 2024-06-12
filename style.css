@@ -555,7 +555,7 @@
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (max-width: 820px) and (min-width: 768px) {
+@media (max-width: 820px) and (min-width: 764px) {
     .home-bg {
         background-image: url(https://res.cloudinary.com/drxkyjtlb/image/upload/v1717848895/home.jpg_pld2np.jpg);
         width: 100%;
