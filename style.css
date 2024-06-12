@@ -463,7 +463,7 @@
     .home-bg {
         background-image: url(https://res.cloudinary.com/drxkyjtlb/image/upload/v1717848895/home.jpg_pld2np.jpg);
         width: 100%;
-        height: 100vh;
+        height: 70vh;
         background-size: cover;
     }
     
@@ -502,8 +502,9 @@
     /*---------------*/
     .About .row{
        /* background-color: green; */
-        padding-top: 20px;
-        padding-bottom: 30px;
+        padding-top: -80px;
+        margin-bottom: -190px;
+
         
     }
     .col-2 {
@@ -540,7 +541,13 @@
         padding: 20px;
         background-color: #fff;
         border-radius: 10px;
-        box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, .15)
+        box-shadow: 15px 15px 15px 15px rgba(0, 0, 0, .15);
+        margin-top: -400px;
+        margin-bottom: -200px;
+    }
+    
+    .Contact .container{
+        margin-top: -300px;
     }
     
     
